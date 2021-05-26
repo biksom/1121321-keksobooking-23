@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
-* Студент: [Sergey Golovin](https://up.htmlacademy.ru/javascript/23/user/1121321).
-* Наставник: `Неизвестно`.
+- Студент: [Sergey Golovin](https://up.htmlacademy.ru/javascript/23/user/1121321).
+- Наставник: Алексей Михеев.
 
 ---
 
