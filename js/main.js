@@ -39,7 +39,7 @@ const ADRESS = [
   'location.lng'
 ];
 
-const PRICE = [
+const PRICES = [
   '2000',
   '3000',
   '4000',
@@ -55,16 +55,16 @@ const TYPES = [
 ];
 
 const ROOMS = [
-  '1',
-  '2',
-  '3',
+  1,
+  2,
+  3,
 ];
 
 const GUESTS = [
-  '1',
-  '2',
-  '3',
-  '4',
+  1,
+  2,
+  3,
+  4,
 ];
 
 const CHECKIN = [
@@ -102,8 +102,8 @@ const PHOTOS = [
 ];
 
 const LAT = [
-  '35.65000',
-  '35.70000',
+  35.65000,
+  35.70000,
 ];
 
 const LNG = [
@@ -112,7 +112,7 @@ const LNG = [
 ];
 
 const getRandomItem = (items) => {
-  const randomItex = getRandomInt(0, items.length);
+  const randomItex = getRandomInt(0, items.length - 1);
   const randomItem = items[randomItex];
   return randomItem;
 
