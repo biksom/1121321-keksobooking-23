@@ -88,7 +88,12 @@ const FEATURES = [
   'conditioner',
 ];
 
-const DESCRIPTION = [];
+const DESCRIPTION = [
+  'Хорошая,чистая',
+  'Средней комфортности',
+  'Лучше не заезжать',
+  'Берите, не пожалеете',
+];
 
 const PHOTOS = [
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg',
@@ -107,7 +112,7 @@ const LNG = [
 ];
 
 const getRandomItem = (items) => {
-  const randomItex = getRandomInt(0, items.lenght);
+  const randomItex = getRandomInt(0, items.length);
   const randomItem = items[randomItex];
   return randomItem;
 
