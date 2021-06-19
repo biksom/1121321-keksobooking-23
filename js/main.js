@@ -36,7 +36,7 @@ const TITLES = [
 
 const ADRESS = [
   'location.lat',
-  'location.lng'
+  'location.lng',
 ];
 
 const PRICES = [
@@ -107,39 +107,33 @@ const LAT = [
 ];
 
 const LNG = [
-  '139.70000',
-  '139.80000',
+  139.70000,
+  139.80000,
 ];
 
 const getRandomItem = (items) => {
   const randomItex = getRandomInt(0, items.length - 1);
   const randomItem = items[randomItex];
   return randomItem;
-
-}
-
-const createOffer = () => {
-  return {
-    autor: {
-      avatar: getRandomItem(AVATARS),
-    },
-    title: getRandomItem(TITLES),
-    address: getRandomItem(ADRESS),
-    price: getRandomItem(PRICE),
-    type: getRandomItem(TYPES),
-    rooms: getRandomItem(ROOMS),
-    guests: getRandomItem(GUESTS),
-    checkin: getRandomItem(CHECKIN),
-    checkout: getRandomItem(CHECKOUT),
-    features: getRandomItem(FEATURES),
-    description: getRandomItem(DESCRIPTION),
-    photos: getRandomItem(PHOTOS),
-    location: {
-      lat: getRandomItem(LAT),
-      lng: getRandomItem(LNG),
-    }
-  }
 };
 
-debugger
-console.log(createOffer());
+const createOffer = () => ({
+  autor: {
+    avatar: getRandomItem(AVATARS),
+  },
+  title: getRandomItem(TITLES),
+  address: getRandomItem(ADRESS),
+  price: getRandomItem(PRICES),
+  type: getRandomItem(TYPES),
+  rooms: getRandomItem(ROOMS),
+  guests: getRandomItem(GUESTS),
+  checkin: getRandomItem(CHECKIN),
+  checkout: getRandomItem(CHECKOUT),
+  features: getRandomItem(FEATURES),
+  description: getRandomItem(DESCRIPTION),
+  photos: getRandomItem(PHOTOS),
+  location: {
+    lat: getRandomItem(LAT),
+    lng: getRandomItem(LNG),
+  },
+});
