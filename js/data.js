@@ -1,4 +1,5 @@
 import { DEFAULT_PRECISION, AVATARS, TITLES, ADRESS, PRICES, TYPES, ROOMS, GUESTS, CHECKIN, CHECKOUT, FEATURES, DESCRIPTION, PHOTOS, LAT, LNG } from './const';
+import { getRandomItem } from './utils.js';
 
 const createOffer = () => ({
   autor: {

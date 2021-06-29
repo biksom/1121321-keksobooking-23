@@ -1,4 +1,3 @@
-import '.data.js';
-import '.utils.js';
+import { createOffer } from './data.js';
 
 const offer = createOffer();

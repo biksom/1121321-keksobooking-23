@@ -16,3 +16,5 @@ const getRandomItem = (items) => {
   const randomItem = items[randomItex];
   return randomItem;
 };
+
+export { getRandomItem };
